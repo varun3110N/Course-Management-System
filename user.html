@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>📚 Student Dashboard</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin</a>
+            <button class="small-btn" onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Welcome, <span id="studentName">Student</span>!</h1>
+        <p>Explore courses and enroll in the courses you like.</p>
+
+        <h2>Available Courses</h2>
+        <div id="courseList" class="course-grid"></div>
+
+        <h2>My Enrolled Courses</h2>
+        <div id="enrolledList" class="course-grid"></div>
+    </main>
+
+    <footer>Keep learning and growing!</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>📚 Course Management System</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="user.html">Student</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="intro">
+            <h1>Learn. Grow. Succeed.</h1>
+            <p>Explore courses and manage your learning journey.</p>
+        </section>
+
+        <section class="card">
+            <h2>Login / Register</h2>
+
+            <label for="role">Select Role</label>
+            <select id="role">
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <label for="name">Full Name (for registration)</label>
+            <input id="name" type="text" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password">
+
+            <button onclick="registerUser()">Register</button>
+            <button class="secondary" onclick="loginUser()">Login</button>
+
+            <p id="message" class="message"></p>
+            <p class="hint">
+                Demo admin login: admin@cms.com / admin123
+            </p>
+        </section>
+    </main>
+
+    <footer>© 2026 Course Management System</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fc;
+    color: #243247;
+    line-height: 1.6;
+}
+
+header {
+    background: #183b66;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8ed9ff;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.intro h1 {
+    font-size: 42px;
+    color: #183b66;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #53657c;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #17365d16;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #8ed9ff;
+    border-color: #2374c6;
+}
+
+button {
+    background: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #104c80;
+}
+
+.secondary {
+    background: #198754;
+    margin-left: 8px;
+}
+
+.secondary:hover {
+    background: #11653d;
+}
+
+.small-btn {
+    margin-top: 0;
+    padding: 8px 12px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.container h1 {
+    color: #183b66;
+    margin-bottom: 8px;
+}
+
+.container h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #17365d12;
+    border-top: 4px solid #2374c6;
+}
+
+.course-card h3 {
+    color: #183b66;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin: 5px 0;
+    color: #53657c;
+}
+
+.course-card button {
+    width: 100%;
+}
+
+.admin-form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.message {
+    margin-top: 12px;
+    color: #198754;
+    font-weight: bold;
+}
+
+.hint {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+    background: #183b66;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

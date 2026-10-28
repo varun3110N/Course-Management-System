@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>⚙️ Admin Dashboard</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="user.html">Student</a>
+            <button class="small-btn" onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Manage Courses</h1>
+        <p>Add courses for students to explore and enroll in.</p>
+
+        <section class="card admin-form">
+            <h2>Add New Course</h2>
+
+            <label for="courseName">Course Name</label>
+            <input id="courseName" type="text"
+                   placeholder="Example: Web Development">
+
+            <label for="instructor">Instructor</label>
+            <input id="instructor" type="text"
+                   placeholder="Instructor name">
+
+            <label for="duration">Duration</label>
+            <input id="duration" type="text"
+                   placeholder="Example: 8 weeks">
+
+            <button onclick="addCourse()">Add Course</button>
+            <p id="adminMessage" class="message"></p>
+        </section>
+
+        <h2>All Courses</h2>
+        <div id="adminCourseList" class="course-grid"></div>
+    </main>
+
+    <footer>Course Management System — Admin Panel</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
